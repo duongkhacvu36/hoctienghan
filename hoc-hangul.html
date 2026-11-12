@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Học bảng chữ cái tiếng Hàn Hangul bằng tiếng Việt: nguyên âm, phụ âm, cách đọc, luyện nghe và trắc nghiệm.">
+<title>Hangul – Học chữ cái tiếng Hàn</title>
+<style>
+:root{--bg:#f5f7fb;--paper:#fff;--ink:#17243a;--muted:#68758b;--line:#e4e9f1;--blue:#4263eb;--blue2:#edf1ff;--green:#16865b;--green2:#e8f7f0;--orange:#b96b13;--orange2:#fff3e3;--shadow:0 12px 35px #24365b12}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:linear-gradient(120deg,#182b55,#4263eb);color:white;padding:34px 20px 28px}
+.wrap{max-width:1080px;margin:auto;padding:0 18px}
+.top{display:flex;justify-content:space-between;gap:20px;align-items:center}.brand{font-weight:800;letter-spacing:.08em;font-size:13px;opacity:.85}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.1;margin:20px 0 10px}header p{max-width:660px;color:#e2e9ff;margin:0}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}nav a{color:white;text-decoration:none;border:1px solid #ffffff55;border-radius:99px;padding:7px 13px;font-size:14px}
+main{padding:28px 0 60px}.intro{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;margin-bottom:18px}
+.panel,.section{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:20px}
+.panel h2,.section h2{margin:0 0 8px;font-size:21px}.muted{color:var(--muted)}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.stat{background:var(--blue2);border-radius:12px;padding:10px 14px;min-width:90px}.stat b{display:block;font-size:22px;color:var(--blue)}
+.tip{background:var(--orange2);border-radius:14px;padding:14px;color:#74450e}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 14px}.tab{border:1px solid var(--line);background:white;color:var(--ink);padding:10px 15px;border-radius:999px;font-weight:700;cursor:pointer}.tab.active{background:var(--blue);color:white;border-color:var(--blue)}
+.section{margin:14px 0}.section-head{display:flex;justify-content:space-between;gap:15px;align-items:start}.section-head p{margin:0;color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin-top:16px}
+.card{border:1px solid var(--line);border-radius:14px;padding:12px;text-align:center;background:#fff;cursor:pointer;transition:.15s;min-height:130px}
+.card:hover,.card:focus{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 7px 20px #4263eb18;outline:none}
+.letter{font-size:42px;font-weight:750;line-height:1.2}.roman{font-weight:750;color:var(--blue);margin-top:4px}.hint{font-size:12px;color:var(--muted);margin-top:3px}
+.card button{border:0;background:var(--blue2);color:var(--blue);border-radius:8px;padding:5px 9px;margin-top:8px;cursor:pointer}
+.hidden{display:none!important}.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rule{border-left:4px solid var(--blue);padding:10px 13px;background:#f6f8ff;border-radius:0 10px 10px 0;margin:10px 0}
+.quizbox{background:#f7f9ff;border:1px solid var(--line);border-radius:16px;padding:18px;margin-top:15px}
+.question{font-size:58px;font-weight:800;text-align:center;margin:12px}
+.answers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.answers button,.action{padding:11px;border-radius:11px;border:1px solid var(--line);background:white;font-weight:700;cursor:pointer;color:var(--ink)}
+.answers button:hover,.action:hover{border-color:var(--blue)}
+.feedback{min-height:28px;font-weight:700;margin-top:12px}.good{color:var(--green)}.bad{color:#bd3b3b}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+footer{text-align:center;color:var(--muted);padding:25px 15px;font-size:13px}
+@media(max-width:700px){.intro,.two{grid-template-columns:1fr}.top{align-items:start;flex-direction:column}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.panel,.section{padding:16px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <div class="top"><div class="brand">HANGUL • HỌC TIẾNG HÀN TỪ ĐẦU</div><div style="font-size:13px;opacity:.85">Miễn phí · Dễ học · Dành cho người Việt</div></div>
+  <h1>Chinh phục bảng chữ cái<br>tiếng Hàn 🇰🇷</h1>
+  <p>Học Hangul theo nhóm chữ có hình dáng gần nhau, xem cách đọc gần tiếng Việt, nghe phát âm và kiểm tra kiến thức ngay trên trang.</p>
+  <nav><a href="#bang-chu">Bảng chữ cái</a><a href="#quy-tac">Mẹo ghi nhớ</a><a href="#luyen-tap">Luyện tập</a></nav>
+ </div>
+</header>
+<main class="wrap">
+ <div class="intro">
+  <div class="panel">
+   <h2>Hangul có gì?</h2>
+   <p class="muted">Hangul (한글) là hệ chữ viết tiếng Hàn. Bảng chữ cái hiện đại có 21 nguyên âm và 19 phụ âm, tổng cộng 40 chữ cái cơ bản.</p>
+   <div class="stats"><div class="stat"><b>21</b><span>Nguyên âm</span></div><div class="stat"><b>19</b><span>Phụ âm</span></div><div class="stat"><b>40</b><span>Tổng chữ cái</span></div></div>
+  </div>
+  <div class="tip"><b>📌 Lưu ý phát âm</b><br>Phiên âm tiếng Việt chỉ giúp bạn bắt đầu. Một số âm như ㅓ, ㄱ, ㄷ không có âm tương đương hoàn toàn trong tiếng Việt. Hãy nghe âm mẫu và luyện dần nhé.</div>
+ </div>
+
+ <div id="bang-chu">
+  <div class="tabs" role="tablist">
+   <button class="tab active" data-tab="vowels">Nguyên âm (21)</button>
+   <button class="tab" data-tab="consonants">Phụ âm (14)</button>
+   <button class="tab" data-tab="double">Phụ âm kép (5)</button>
+  </div>
+  <section class="section" id="vowels">
+   <div class="section-head"><div><h2>Nguyên âm – 모음</h2><p>Các chữ được xếp theo nét và cách hình thành gần nhau.</p></div></div>
+   <div class="grid" id="vowelGrid"></div>
+  </section>
+  <section class="section hidden" id="consonants">
+   <div class="section-head"><div><h2>Phụ âm cơ bản – 자음</h2><p>Bấm vào từng chữ để nghe âm mẫu tiếng Hàn nếu trình duyệt hỗ trợ.</p></div></div>
+   <div class="grid" id="consonantGrid"></div>
+  </section>
+  <section class="section hidden" id="double">
+   <div class="section-head"><div><h2>Phụ âm kép – 쌍자음</h2><p>Đây là các âm căng, phát âm chắc và không bật hơi mạnh.</p></div></div>
+   <div class="grid" id="doubleGrid"></div>
+  </section>
+ </div>
+
+ <section class="section" id="quy-tac">
+  <h2>Mẹo ghi nhớ nhanh</h2>
+  <div class="two">
+   <div>
+    <div class="rule"><b>ㅏ → a &nbsp; | &nbsp; ㅑ → ya</b><br><span class="muted">Thêm một nét ngắn tạo âm có y đứng trước.</span></div>
+    <div class="rule"><b>ㅓ → eo (gần âm ơ) &nbsp; | &nbsp; ㅕ → yeo</b><br><span class="muted">Đừng đọc ㅓ thành “o”.</span></div>
+    <div class="rule"><b>ㅗ → ô &nbsp; | &nbsp; ㅛ → yô</b></div>
+   </div>
+   <div>
+    <div class="rule"><b>ㅜ → u &nbsp; | &nbsp; ㅠ → yu</b></div>
+    <div class="rule"><b>ㅡ → ư &nbsp; | &nbsp; ㅣ → i</b></div>
+    <div class="rule"><b>ㅇ</b><br><span class="muted">Đứng đầu âm tiết: không phát âm. Đứng cuối âm tiết: đọc gần như “ng”.</span></div>
+   </div>
+  </div>
+ </section>
+
+ <section class="section" id="luyen-tap">
+  <h2>🎯 Luyện tập nhận diện</h2>
+  <p class="muted">Chọn cách đọc gần đúng nhất của chữ đang hiện trên màn hình.</p>
+  <div class="quizbox">
+   <div style="text-align:center;color:var(--muted);font-size:13px" id="progress">Câu 1</div>
+   <div class="question" id="quizLetter">ㅏ</div>
+   <div class="answers" id="answers"></div>
+   <div class="feedback" id="feedback" aria-live="polite"></div>
+   <div class="controls"><button class="action" id="next">Câu tiếp theo →</button><button class="action" id="reset">Làm lại</button></div>
+   <div class="muted" style="font-size:13px;margin-top:10px" id="score">Điểm: 0/0</div>
+  </div>
+ </section>
+</main>
+<footer>HANGUL • Tài liệu học nhập môn miễn phí. Phiên âm chỉ mang tính tham khảo, không thay thế giáo viên hoặc từ điển phát âm.</footer>
+<script>
+const vowels=[
+ ['ㅏ','a','Nét dọc · cặp với ㅑ'],['ㅑ','ya','Nét dọc · thêm âm y'],
+ ['ㅓ','eo (ơ)','Nét dọc · cặp với ㅕ'],['ㅕ','yeo (yơ)','Nét dọc · thêm âm y'],
+ ['ㅣ','i','Nét dọc đơn'],['ㅗ','ô','Nét ngang · cặp với ㅛ'],['ㅛ','yô','Nét ngang · thêm âm y'],
+ ['ㅜ','u','Nét ngang · cặp với ㅠ'],['ㅠ','yu','Nét ngang · thêm âm y'],['ㅡ','ư','Nét ngang đơn'],
+ ['ㅐ','e','Nguyên âm ghép'],['ㅒ','ye','ㅐ thêm âm y'],['ㅔ','ê','Nguyên âm ghép'],['ㅖ','yê','ㅔ thêm âm y'],
+ ['ㅘ','wa','ㅗ + ㅏ'],['ㅙ','we','ㅗ + ㅐ'],['ㅚ','oe (gần uê/wê)','ㅗ + ㅣ'],
+ ['ㅝ','wo','ㅜ + ㅓ'],['ㅞ','we','ㅜ + ㅔ'],['ㅟ','wi','ㅜ + ㅣ'],['ㅢ','ưi','ㅡ + ㅣ']
+];
+const consonants=[
+ ['ㄱ','g/k','Nét góc'],['ㅋ','kh','ㄱ thêm nét bật hơi'],['ㄴ','n','Nét góc'],
+ ['ㄷ','d/t','Nét góc'],['ㅌ','th','ㄷ thêm nét bật hơi'],['ㄹ','r/l','Âm gần r hoặc l tùy vị trí'],
+ ['ㅁ','m','Hình vuông'],['ㅂ','b/p','Hình vuông có nét trên'],['ㅍ','ph','ㅂ thêm nét bật hơi'],
+ ['ㅅ','s','Nét nhọn'],['ㅆ','ss căng','ㅅ kép'],['ㅇ','câm / ng','Tròn: đầu âm tiết câm, cuối âm tiết ng'],
+ ['ㅈ','j/ch','ㅅ có nét ngang'],['ㅊ','ch bật hơi','ㅈ thêm nét bật hơi'],['ㅎ','h','Có vòng tròn']
+];
+const doubles=[['ㄲ','kk căng','ㄱ kép'],['ㄸ','tt căng','ㄷ kép'],['ㅃ','pp căng','ㅂ kép'],['ㅆ','ss căng','ㅅ kép'],['ㅉ','jj căng','ㅈ kép']];
+function speak(ch){if(!('speechSynthesis'in window)){alert('Trình duyệt này chưa hỗ trợ đọc văn bản.');return;}speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(ch);u.lang='ko-KR';u.rate=.78;speechSynthesis.speak(u)}
+function draw(id,data){document.getElementById(id).innerHTML=data.map(([ch,read,hint])=>`<article class="card" tabindex="0" role="button" aria-label="Chữ ${ch}, đọc gần ${read}" onclick="speak('${ch}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();speak('${ch}')}"><div class="letter">${ch}</div><div class="roman">${read}</div><div class="hint">${hint}</div><button type="button" tabindex="-1" onclick="event.stopPropagation();speak('${ch}')">🔊 Nghe âm</button></article>`).join('')}
+draw('vowelGrid',vowels);draw('consonantGrid',consonants);draw('doubleGrid',doubles);
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===b));['vowels','consonants','double'].forEach(id=>document.getElementById(id).classList.toggle('hidden',id!==b.dataset.tab));}));
+const pool=[...vowels,...consonants,...doubles];let current,correct=0,total=0,answered=false;
+function newQuestion(){current=pool[Math.floor(Math.random()*pool.length)];answered=false;document.getElementById('quizLetter').textContent=current[0];document.getElementById('feedback').textContent='';document.getElementById('feedback').className='feedback';document.getElementById('progress').textContent=`Câu ${total+1}`;let choices=[current[1]];while(choices.length<4){let v=pool[Math.floor(Math.random()*pool.length)][1];if(!choices.includes(v))choices.push(v)}choices.sort(()=>Math.random()-.5);document.getElementById('answers').innerHTML=choices.map(x=>`<button type="button">${x}</button>`).join('');document.querySelectorAll('#answers button').forEach(btn=>btn.addEventListener('click',()=>check(btn.textContent,btn)))}
+function check(value,btn){if(answered)return;answered=true;total++;let ok=value===current[1];if(ok)correct++;document.getElementById('feedback').textContent=ok?'Chính xác! 🎉':`Chưa đúng. Đáp án: ${current[1]}`;document.getElementById('feedback').className='feedback '+(ok?'good':'bad');document.getElementById('score').textContent=`Điểm: ${correct}/${total}`;document.querySelectorAll('#answers button').forEach(b=>b.disabled=true)}
+document.getElementById('next').addEventListener('click',newQuestion);document.getElementById('reset').addEventListener('click',()=>{correct=0;total=0;document.getElementById('score').textContent='Điểm: 0/0';newQuestion()});newQuestion();
+</script>
+</body>
+</html>
